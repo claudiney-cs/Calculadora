@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Button, LogBox } from 'react-native';
 
 export default function App() {
+  LogBox.ignoreLogs(['Remote debugger']);
   // Mapeamento de teclas
   const buttons = ['LIMPAR', 'DEL', '%', '/', 7, 8, 9, "x", 6, 5, 4, '-', 3, 2, 1, '+', 0, '.', '+/-', '=']
 
